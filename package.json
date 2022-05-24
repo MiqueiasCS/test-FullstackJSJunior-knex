@@ -6,18 +6,22 @@
   "scripts": {
     "start": "nodemon ./src/server.js",
     "migrate": "knex migrate:latest",
-    "seed": "knex seed:run"
+    "seed": "knex seed:run",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
   },
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "knex": "^2.0.0",
-    "pg": "^8.7.3"
+    "pg": "^8.7.3",
+    "yup": "^0.32.11"
   }
 }
