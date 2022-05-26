@@ -4,7 +4,6 @@ const validateBody = (schema) => async (req, res, next) => {
     await schema.validate(resource, { abortEarly: false, stripUnknown: true });
     return next();
   } catch (e) {
-    console.log(e);
     return res.status(400).json({ error: e.errors.join(", ") });
   }
 };

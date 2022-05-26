@@ -15,6 +15,10 @@ module.exports = {
       user: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASSWORD,
     },
+    pool: {
+      min: 2,
+      max: 10,
+    },
     migrations: {
       tableName: "knex_migrations",
       directory: `${__dirname}/src/database/migrations`,
@@ -23,21 +27,4 @@ module.exports = {
       directory: `${__dirname}/src/database/seeds`,
     },
   },
-
-  // production: {
-  //   client: "postgresql",
-  //   connection: {
-  //     database: "my_db",
-  //     user: "username",
-  //     password: "password",
-  //   },
-  //   pool: {
-  //     min: 2,
-  //     max: 10,
-  //   },
-  //   migrations: {
-  //     tableName: "knex_migrations",
-  //   },
-  // },
 };
-// npx knex migrate:make create_table_users

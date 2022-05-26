@@ -6,7 +6,6 @@ const createUser = async (req, res, next) => {
     const { email, senha } = req.body;
 
     const result = await knex("users").insert({ email: email, senha: senha });
-    console.log(result);
 
     return res.status(201).send();
   } catch (error) {

@@ -98,6 +98,9 @@
           }
         ],
         "responses": {
+          "406": {
+            "description": "Not Acceptable - parametro user_id inválido"
+          },
           "404": {
             "description": "Not Found - id do usuário não encontrado"
           },
@@ -147,6 +150,9 @@
           "409": {
             "description": "Conflict - email já cadastrado"
           },
+          "406": {
+            "description": "Not Acceptable - parametro user_id inválido"
+          },
           "404": {
             "description": "Not Found - id do usuário não encontrado"
           },
@@ -179,6 +185,9 @@
           }
         ],
         "responses": {
+          "406": {
+            "description": "Not Acceptable - parametro user_id inválido"
+          },
           "404": {
             "description": "Not Found - id do usuário não encontrado"
           },
