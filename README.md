@@ -1,6 +1,13 @@
+## Teste
+O teste consiste em um CRUD de usuários, onde é possível:
+- cadastrar um usuário com email e senha
+- listar todos os usuários 
+- deletar todos os usuários 
+- atualizar, deletar e listar um único usuário
+
 ## Instalação
 
-- Primeiro faça o fork deste [repositório]().
+- Primeiro faça o fork deste repositório.
 
 - Em seguida faça um git clone para a sua maquina
 
@@ -36,7 +43,7 @@ $ npm run seed
 $ npm start
 ```
 
-- A aplicação inicializará na rota http://localhost:3000/. Você deverá ver algo semelhante ao snippet logo abaixo no seu terminal:
+- A aplicação inicializará na rota http://localhost:3000/
 
 **obs: para encerrar o container utilize:**
 
